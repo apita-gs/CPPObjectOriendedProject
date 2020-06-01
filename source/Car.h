@@ -1,8 +1,11 @@
 #pragma once
+ 
 #include <string>
+#include "Engine.h"
 using namespace std;
  
-class Car{
+class Car
+{
 private:
 	// attributes
 	string vin;
@@ -12,12 +15,13 @@ private:
 	double price;
 	short numDoors;
 	bool hatchback;
+	Engine motor;
  
 public:
 	// constructors and destructor
 	Car();
-	Car(string vin, string make, string model, short year, double price,
-           short numDoors, bool hatchback);
+	Car(string vin, string make, string model, short year, double price, 
+            short numDoors, bool hatchback, Engine motor);
 	~Car();
  
 	// behaviors in the public section!
@@ -45,4 +49,7 @@ public:
  
 	bool getHatchback();
 	void setHatchback(bool isHatchback);
+ 
+	Engine getMotor();
+	void setMotor(Engine motor);
 };
