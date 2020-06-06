@@ -3,8 +3,7 @@
 #include <string>
 using namespace std;
  
-class Engine
-{
+class Engine{
 private:
 	// attributes
 	short numCylinders;
