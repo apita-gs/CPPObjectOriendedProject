@@ -14,7 +14,9 @@ public:
 	ElectricCar();
 	ElectricCar(string vin, string make, string model, short year, double price, 
 		short numDoors, bool hatchback, float batterySize, short range, 
-		short mpgE, Engine motor);	virtual ~ElectricCar();
+		short mpgE, Engine motor);	
+	
+	virtual ~ElectricCar();
  
 	// behaviors
 	string toString();
